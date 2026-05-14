@@ -1,0 +1,49 @@
+
+.status-invoice.published {
+  color: #01d201;
+  text-align: center;
+  max-width: 100px;
+  border-radius: 3px;
+  border: 1px solid #01d201;
+}
+.status-invoice.draft {
+  color: #f78738;
+  text-align: center;
+  max-width: 100px;
+  border-radius: 3px;
+  border: 1px solid #f78738;
+}
+
+.status-invoice.closed {
+  color: #ff0000;
+  text-align: center;
+  max-width: 100px;
+  border-radius: 3px;
+  border: 1px solid #ff0000;
+}
+
+.dark .status-invoice.published {
+  color: #01a401;
+  max-width: 100px;
+  border-radius: 3px;
+  border: 1px solid #84e1bc;
+  background-color: #84e1bc;
+  font-weight: 600;
+}
+
+.dark .status-invoice.closed {
+  color: #ff3838;
+  max-width: 100px;
+  border-radius: 3px;
+  border: 1px solid #c2afaf;
+  background-color: #c2afaf;
+  font-weight: 600;
+}
+.dark .status-invoice.draft {
+  color: #f78738;
+  max-width: 100px;
+  border-radius: 3px;
+  border: 1px solid #c2afaf;
+  background-color: #c2afaf;
+  font-weight: 600;
+}

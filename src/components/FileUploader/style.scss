@@ -1,0 +1,23 @@
+.certificate-upload {
+  width: 10rem;
+  cursor: pointer;
+  min-height: 8rem;
+  max-height: 10rem;
+  overflow: auto;
+  border: 1px solid #ccc;
+  .edit-pdf-icon {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    height: 30px;
+    border: hidden;
+    .actionicons {
+      background-color: var(--white-color);
+      border-radius: 50%;
+      padding: 4px;
+      .dark & {
+        background-color: #dcdcdc;
+      }
+    }
+  }
+}

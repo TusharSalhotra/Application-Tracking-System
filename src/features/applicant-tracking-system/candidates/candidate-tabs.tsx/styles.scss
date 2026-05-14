@@ -1,0 +1,459 @@
+@use "../../../../styles/mixins.scss" as mixins;
+
+.candidate-details {
+  border: 1px dashed #b7cef8;
+  border-radius: 14px;
+  overflow: hidden;
+  height: max-content;
+  padding: 15px;
+  background-color: #eef4ff47;
+  gap: 10px;
+  .dark & {
+    background-color: #23232347;
+    border-color: #ffffff;
+  }
+  .sub-heading-text {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    .dark & {
+      color: var(--white-color);
+    }
+  }
+  .ant-radio-group {
+    span {
+      @include mixins.text-white-on-dark;
+    }
+  }
+
+  .basic-info {
+    padding-bottom: 10px;
+
+    h3 {
+      font-size: 25px;
+      font-weight: 800;
+      margin-bottom: 0px;
+      @include mixins.text-white-on-dark;
+    }
+
+    .candidate-email {
+      color: var(--primary-color2);
+      text-decoration: none;
+      font-size: 14px;
+      @include mixins.text-white-on-dark;
+    }
+
+    p {
+      margin: 2px 0;
+      color: #8d8d8d;
+      @include mixins.text-white-on-dark;
+    }
+    .blacklisted-rejected {
+      .reason {
+        background-color: #ffdede;
+        color: #ff4e4e;
+        padding: 5px 10px;
+        height: max-content;
+        border-radius: 4px;
+        font-size: 16px;
+        .status {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .candidate-info-wrapper {
+    .candidate-section {
+      font-size: 20px;
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--primary-color);
+      margin-bottom: 10px;
+      @include mixins.text-white-on-dark;
+      .dark & {
+        border-color: var(--border-gray);
+      }
+    }
+  }
+
+  .candidate-information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    @include mixins.text-white-on-dark;
+
+    @media (max-width: 576px) {
+      flex-direction: row;
+      gap: 10px;
+      &.new-section {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+
+    .online {
+      background-color: #28a745;
+      border: 1px solid #28a745;
+      color: var(--white-color);
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+
+    .offline {
+      background-color: #ff0000;
+      border: 1px solid #ff0000;
+      color: var(--white-color);
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+    a {
+      color: var(--primary-color2);
+      @include mixins.text-white-on-dark;
+      .dark & {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .candidate-doc {
+    background-color: #eef1f7;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px 0 5px;
+    max-width: 450px;
+    @include mixins.text-white-on-dark;
+
+    .dark & {
+      background-color: var(--dark-black2);
+    }
+
+    .view-icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .candidate-name {
+      color: #000000;
+      font-weight: 600;
+      margin-bottom: 5px;
+      @include mixins.text-white-on-dark;
+      cursor: default;
+    }
+    a {
+      color: var(--primary-color2);
+      .dark & {
+        color: var(--white-color);
+      }
+    }
+  }
+}
+
+.blacklist-modal {
+  .blacklist-modal-footer {
+    margin-top: 40px;
+  }
+}
+
+.schedule-details {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  .header {
+    display: flex;
+    justify-content: space-between; // Aligns items to the left and right
+    align-items: center; // Vertically aligns items to the center
+    margin-bottom: 20px;
+  }
+
+  .schedule-button {
+    padding: 8px 16px;
+    background-color: #f5faf5;
+    color: black;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #e1e2e1;
+    }
+  }
+
+  .header h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .info,
+  .details {
+    border: 1px dashed #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .topic,
+  .time,
+  .meeting-mode,
+  .host,
+  .participant,
+  .profile,
+  .position,
+  .applied,
+  .contact,
+  .location {
+    margin-bottom: 10px;
+  }
+
+  .info span,
+  .details span {
+    font-weight: bold;
+    color: #555;
+  }
+
+  .status-completed {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .resume {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+  }
+
+  .resume .pdf {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #333;
+  }
+
+  .progress {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+//scheduler css
+.drower-content {
+  height: calc(100dvh - 0px);
+  overflow: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Add some margin and padding for the details card */
+.schedule-details .ant-card-body {
+  padding: 20px;
+}
+
+.interview-scheduler {
+  border: 1px solid #e7e7e7;
+  padding: 20px;
+  @include mixins.dark-bg;
+
+  .ant-picker-calendar-header {
+    padding-inline-start: 0;
+    padding: 0px 0 12px 0;
+    .ant-radio-group {
+      display: none;
+    }
+    .ant-select {
+      min-height: 40px;
+    }
+  }
+
+  .ant-picker-panel {
+    @include mixins.dark-bg;
+    .ant-picker-date-panel {
+      .ant-picker-body {
+        border: 1px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 0;
+
+        .ant-picker-content {
+          thead {
+            background-color: var(--primary-color);
+            .dark & {
+              background-color: var(--primary-color2);
+            }
+
+            tr {
+              th {
+                padding: 10px 0;
+                color: var(--white-color);
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              td {
+                text-align: center;
+                &.ant-picker-cell-disabled {
+                  cursor: not-allowed;
+                  .ant-picker-calendar-date {
+                    .ant-picker-calendar-date-value {
+                      .dark & {
+                        color: #8d8d8d !important;
+                      }
+                    }
+                  }
+                  &::before {
+                    background: none;
+                  }
+                }
+
+                &.ant-picker-cell-selected {
+                  .ant-picker-calendar-date {
+                    background-color: var(--primary-color) !important;
+                    border: 1px solid var(--primary-color);
+                    color: var(--white-color) !important;
+                    .dark & {
+                      background-color: var(--primary-color2) !important;
+                      border-color: var(--primary-color2) !important;
+                    }
+                  }
+
+                  .ant-picker-cell-inner {
+                    color: var(--primary-color);
+                    &::before {
+                      border: none;
+                    }
+                  }
+                }
+
+                .ant-picker-calendar-date-content {
+                  min-height: initial;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.schedule-interview-form {
+  margin-top: 12px;
+}
+
+.candidate-onboard {
+  font-size: 16px;
+  margin-bottom: 2px;
+  display: flex;
+  gap: 8px;
+  @include mixins.text-white-on-dark;
+
+  .candidate-label {
+    font-size: 15px;
+  }
+  &.available-times {
+    flex-direction: column;
+  }
+  .resume-view {
+    width: 28rem;
+    max-height: 300px;
+    overflow: auto;
+  }
+}
+
+.applicant-info {
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  @include mixins.text-white-on-dark;
+
+  .basic-info-applicant {
+    padding: 20px;
+    @include mixins.text-white-on-dark;
+  }
+  .ant-list {
+    .ant-list-items {
+      .ant-list-item {
+        border-block-end: 1px solid var(--border-gray);
+        border-radius: 0;
+        padding: 8px 10px;
+        &:last-child {
+          border-block-end: 0px;
+        }
+      }
+    }
+  }
+}
+
+.schedule-interview-title {
+  font-size: 20px;
+  font-weight: 600;
+  @include mixins.text-white-on-dark;
+}
+
+.email-interview-schedule {
+  font-size: 15;
+  font-weight: 600;
+  @include mixins.text-white-on-dark;
+
+  a {
+    color: var(--primary-color2);
+    @include mixins.link-on-dark;
+  }
+}
+.onboarding-form {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  position: sticky;
+  top: 20px;
+  @include mixins.dark-bg;
+  .form-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    @include mixins.text-white-on-dark;
+  }
+}
+
+.candidate-fontstyle{
+  color: red;
+}
+.candidate-boldstyle{
+  color: red;
+  font-weight: bold;
+}
+.candidate-info{
+  word-wrap: break-word;
+  white-space:normal;
+ 
+}

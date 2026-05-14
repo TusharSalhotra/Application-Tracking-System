@@ -1,0 +1,23 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .ant-picker-input {
+    input::placeholder {
+      color: #2d2d2d !important;
+    }
+  }
+}
+
+.retention-select {
+  margin-right: auto; /* Pushes the Select to the left */
+}
+
+.card-title {
+  margin-left: auto; /* Pushes the title to the right */
+  font-size: 16px;
+}
+
+.chart-filters {
+  margin-right: 10px;
+}

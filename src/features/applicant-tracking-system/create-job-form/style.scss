@@ -1,0 +1,339 @@
+@use "../../../styles/mixins.scss" as mixins;
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout Styles */
+.react-form-builder-custom {
+  display: flex;
+  width: 100%;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.toolbar-header {
+  opacity: 1 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-size: 0.9rem;
+  @include mixins.text-white-on-dark;
+}
+.disabled-builder {
+  pointer-events: none;  // Disables clicks and interactions
+  opacity: 0.5;   
+  cursor: not-allowed;       // Optional: dims the form for visual feedback
+}
+.form-builder-custom {
+  .react-form-builder-toolbar {
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-left: 1px solid #ddd;
+    overflow-y: auto;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #f0f0f0;
+    margin-top: 0px;
+    position: sticky;
+    top: -13px;
+    @include mixins.dark-bg;
+    h4 {
+      @include mixins.text-white-on-dark;
+    }
+    ul {
+      li {
+        background-color: var(--white-color);
+        @include mixins.text-white-on-dark;
+        @include mixins.dark-bg2;
+
+        i {
+          color: #ddd;
+        }
+      }
+    }
+  }
+  .react-form-builder {
+    .react-form-builder-preview {
+      width: 70%;
+      display: inline-block;
+      flex: 1;
+      padding: 1rem;
+      border-right: 1px solid #ddd;
+      overflow-y: auto;
+      @include mixins.dark-bg;
+      .edit-form {
+        padding: 15px;
+        @include mixins.dark-bg;
+
+        .clearfix {
+          color: var(--white-color);
+          padding: 10px;
+          margin: -15px -15px 20px -15px;
+          background-color: var(--primary-color);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .dark & {
+            background-color: var(--primary-color2);
+          }
+          h4 {
+            margin-bottom: 0;
+          }
+          .dismiss-edit {
+            margin: 0;
+          }
+        }
+        .form-group {
+          .control-label,
+          label {
+            font-weight: 700;
+            margin-bottom: 5px;
+            display: block !important;
+            @include mixins.text-white-on-dark;
+          }
+          .rdw-editor-toolbar {
+            margin-bottom: 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            @include mixins.dark-bg;
+            @include mixins.text-white-on-dark;
+          }
+          .rdw-editor-main {
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 0;
+            box-sizing: border-box;
+            @include mixins.dark-bg;
+            @include mixins.text-white-on-dark;
+          }
+          .custom-checkbox {
+            .custom-control-label {
+              margin-bottom: 0;
+              margin-left: 5px;
+            }
+          }
+        }
+        .dynamic-option-list {
+          ul {
+            li {
+              @include mixins.text-white-on-dark;
+              .row {
+                display: flex;
+              }
+              input.form-control {
+                color: #000;
+                @include mixins.text-white-on-dark;
+              }
+              &.clearfix {
+                margin: 0;
+              }
+            }
+            .clearfix {
+              background-color: var(--white-color);
+              @include mixins.dark-bg2;
+              .row {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                .dynamic-options-actions-buttons {
+                  button {
+                    background-color: var(--white-color);
+                    margin: 0;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    @include mixins.dark-bg;
+
+                    i {
+                      margin: 0 auto;
+                      @include mixins.text-white-on-dark;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .Sortable {
+        .rfb-item {
+          &:hover {
+            .dark & {
+              box-shadow: inset 0 0 5px #959393;
+            }
+          }
+          .toolbar-header {
+            z-index: 1 !important;
+            .toolbar-header-buttons {
+              margin-top: 0;
+              right: 0;
+              display: flex;
+              gap: 5px;
+              i {
+                @include mixins.text-white-on-dark;
+              }
+            }
+          }
+        }
+        .SortableItem {
+          margin-bottom: 15px;
+          border: 1px dashed #ccc;
+          padding: 10px;
+          background-color: #fff;
+          cursor: pointer;
+          @include mixins.dark-bg;
+          .form-group {
+            .image-upload-control {
+              p {
+                @include mixins.text-white-on-dark;
+              }
+            }
+            .custom-control {
+              position: relative;
+              top: 4px;
+              .custom-control-label {
+                color: #000;
+                margin-left: 10px;
+                @include mixins.text-white-on-dark;
+              }
+            }
+          }
+
+          .preview-page-break {
+            @include mixins.text-white-on-dark;
+            .dark & {
+              border-top: 2px dotted #2b3345;
+              border-bottom: 2px dotted #2b3345;
+              background: repeating-linear-gradient(
+                45deg,
+                var(--dark-black2),
+                var(--dark-black2) 10px,
+                #030712 10px,
+                #030712 20px
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+  .custom-control {
+    display: flex;
+  }
+  .form-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    max-width: 100%;
+    @include mixins.text-white-on-dark;
+    .label-required {
+      color: var(--red-color) !important;
+    }
+  }
+  .form-control {
+    @include mixins.dark-bg2;
+    @include mixins.text-white-on-dark;
+  }
+  .float-left {
+    float: none;
+  }
+}
+
+.btn.is-isolated {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.btn.is-isolated i {
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.label-required {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  color: red;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container {
+  position: relative;
+}
+
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-upload {
+  margin-top: 10px;
+}
+
+.image-upload-control {
+  text-align: center;
+}
+
+.image-upload-control .btn {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.image-upload-control p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-builder-custom .float-right {
+  float: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .react-form-builder-custom {
+    flex-direction: column;
+  }
+
+  .react-form-builder-preview {
+    border-right: none;
+    margin-bottom: 1rem;
+  }
+
+  .react-form-builder-toolbar {
+    width: 100%;
+    border-left: none;
+  }
+}

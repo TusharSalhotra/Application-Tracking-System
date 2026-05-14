@@ -1,0 +1,69 @@
+@use "../../../../styles/mixins.scss" as mixins;
+.info,
+.details {
+  border: 1px dashed #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.topic,
+.time,
+.meeting-mode,
+.host,
+.participant,
+.responsibilities {
+  margin-bottom: 10px;
+}
+
+.info span,
+.details span {
+  font-weight: bold;
+  color: #555;
+}
+.list {
+  padding-left: 22px;
+}
+.job-application-header {
+  h2,
+  p {
+    @include mixins.text-white-on-dark;
+  }
+}
+.Job-details-form {
+  max-height: calc(100dvh - 218px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 95%;
+  margin: -50px auto 0;
+  border-radius: 8px;
+  .form-card {
+    .primary-heading {
+      padding: 10px;
+    }
+  }
+  .job-application-header {
+    gap: 5px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 12px;
+  }
+}
+
+.job-form-page {
+  height: 100dvh;
+  width: 100dvw;
+  .job-form {
+    flex: 1;
+    .base-card-body {
+      padding: 1rem !important;
+    }
+  }
+
+  .CHS-public-footer {
+    text-align: center;
+    background-color: rgb(240, 242, 245);
+    color: rgb(0, 0, 0);
+    padding: 10px 0px;
+  }
+}

@@ -1,0 +1,36 @@
+@use "../styles/mixins.scss" as mixins;
+
+.total-reason-chart {
+  .total-reason {
+    @include mixins.text-white-on-dark;
+  }
+  .total-reason-table {
+    .ant-table {
+      .ant-table-container {
+        .ant-table-content {
+          table {
+            .ant-table-thead {
+              tr {
+                th {
+                  @include mixins.dark-bg;
+                  @include mixins.text-white-on-dark;
+                }
+              }
+            }
+            .ant-table-tbody {
+              tr {
+                td {
+                  @include mixins.dark-bg2;
+                  @include mixins.text-white-on-dark;
+                  .dark & {
+                    border-bottom-color: #3c3c3c;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.react-tel-input {
+  padding: 0 !important;
+  .form-control {
+    width: 100% !important;
+    height: 44px !important;
+    border-radius: 8px !important;
+  }
+  .flag-dropdown {
+    border-radius: 8px 0 0 8px !important;
+  }
+  .selected-flag {
+    border-radius: 8px 0 0 8px !important;
+  }
+}
+
+.ant-input-password {
+  padding: 0 10px !important;
+}
+
+.ant-modal-content {
+  padding: 0 !important;
+  .ant-modal-title {
+    padding: 10px 15px !important;
+    border-bottom: 1px solid #ccc;
+    font-weight: 500;
+  }
+  .ant-modal-footer {
+    padding: 10px 15px 10px !important;
+    border-top: 1px solid #ccc;
+  }
+}
+
+.ant-checkbox {
+  .ant-checkbox-inner {
+    box-sizing: border-box;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+  }
+}
+
+.same-above-mobile {
+  display: none;
+  position: relative;
+  top: -10px;
+  text-align: right;
+}
+
+.dark .primary-heading-title {
+  color: var(--white-color);
+}
+
+.pay-info {
+  min-height: 55vh;
+}
+
+.ant-switch {
+  background: rgba(0, 0, 0, 0.25) !important;
+  &.ant-switch-checked {
+    background: #032d60 !important;
+    .dark & {
+      background: #037ad9 !important;
+    }
+    &.ant-switch-disabled {
+      background: #4d4d4d !important;
+    }
+  }
+}
+
+.ant-select-selector {
+  width: 100%;
+  .dark & {
+    background-color: var(--dark-black1) !important;
+  }
+}
+
+.dark .ant-select-selector .ant-select-selection-placeholder {
+  color: #fff !important;
+}
+
+.CHS-button {
+  padding: 10px;
+  background-color: #032d60;
+  box-shadow: none !important;
+  color: #fff;
+}
+
+.dark .ant-checkbox,
+.dark .ant-checkbox-wrapper {
+  color: #fff;
+}
+
+.citizenship label[title="Citizenship"] {
+  font-weight: 700;
+  color: #000000e0;
+}
+
+.swal2-popup .swal2-title {
+  font-size: 25px !important;
+}
+
+.dark .swal2-popup .swal2-title {
+  color: var(--white-color);
+}
+
+.swal2-popup .swal2-styled {
+  margin: 0 5px !important;
+}
+
+.swal2-popup.swal2-modal.swal2-show {
+  padding: 10px 20px;
+}
+
+@media (max-width: 767px) {
+  .same-above-mobile {
+    display: block;
+  }
+
+  .primary-heading {
+    font-size: 1rem;
+    .same-above-desktop {
+      display: none;
+    }
+  }
+}

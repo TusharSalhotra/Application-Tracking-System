@@ -1,0 +1,120 @@
+@use "./mixins.scss" as mixins;
+
+.common-modal {
+  &.modal-with-card {
+    .uploading-progress {
+      .uploading-text {
+        @include mixins.text-white-on-dark;
+      }
+    }
+    .inner-content {
+      @include mixins.text-white-on-dark;
+      h2,
+      h3 {
+        @include mixins.text-white-on-dark;
+      }
+    }
+    .ant-card-body {
+      @include mixins.text-white-on-dark;
+      .candidate-information {
+        @include mixins.text-white-on-dark;
+      }
+    }
+    .modal-data {
+      .modal-text {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 20px;
+        @include mixins.text-white-on-dark;
+      }
+    }
+  }
+}
+
+.ant-drawer {
+  .ant-drawer-content-wrapper {
+    .ant-drawer-content {
+      .dark & {
+        background: var(--dark-black1);
+      }
+      .ant-drawer-header {
+        border-color: var(--border-gray);
+        .ant-drawer-header-title {
+          .ant-drawer-title {
+            @include mixins.text-white-on-dark;
+          }
+          .ant-drawer-close {
+            .anticon {
+              @include mixins.text-white-on-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.blacklist-card {
+  .blacklist-card-heading {
+    @include mixins.text-white-on-dark;
+  }
+  .ant-radio-group {
+    .ant-radio-wrapper {
+      margin-bottom: 8px;
+      span {
+        @include mixins.text-white-on-dark;
+      }
+    }
+  }
+  .ant-card-body {
+    padding: 18px;
+  }
+}
+
+.custom-swal {
+  &.open {
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    .custom-popover {
+      z-index: 99;
+      max-width: 512px;
+      width: 100%;
+      .base-card {
+        border-radius: 5px;
+        .base-card-body {
+          padding: 20px;
+
+          .swal-heading {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          .checkpoint-form-field {
+            margin-bottom: 18px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+.ant-modal-confirm {
+  .ant-modal-body {
+    .ant-modal-confirm-body-has-title {
+      .ant-modal-confirm-paragraph {
+        .ant-modal-confirm-title,
+        .ant-modal-confirm-content {
+          @include mixins.text-white-on-dark;
+        }
+      }
+    }
+  }
+}

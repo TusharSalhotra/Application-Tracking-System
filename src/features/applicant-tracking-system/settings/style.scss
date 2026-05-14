@@ -1,0 +1,246 @@
+@use "../../../styles/mixins.scss" as mixins;
+.settings-container {
+  @include mixins.text-white-on-dark;
+
+  label {
+    @include mixins.text-white-on-dark;
+  }
+  .theme-section {
+    margin-bottom: 20px;
+    h3 {
+      @include mixins.text-white-on-dark;
+    }
+  }
+  .created-forms {
+    @include mixins.text-white-on-dark;
+
+    .dark & {
+      border: 1px solid #333;
+      .ant-card-head {
+        margin-bottom: 0;
+        border-color: #333;
+      }
+    }
+    .ant-card-body {
+      padding: 10px 15px;
+      .saved-forms {
+        display: flex;
+        gap: 1479px;
+        flex-wrap: wrap;
+        .saved-forms-item {
+          padding: 6px 10px 30px;
+          border: 1px solid var(--primary-color);
+          border-radius: 5px;
+          gap: 8px;
+          font-size: 20px;
+          min-height: 150px;
+          width: 150px;
+          text-align: center;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          .dark & {
+            border-color: var(--border-gray);
+          }
+          &.add-new {
+            padding-bottom: 3px;
+            color: #919191;
+            border: 3px dashed #919191;
+            font-size: 18px;
+            .anticon {
+              font-size: 50px;
+            }
+          }
+          .file-icon {
+            font-size: 30px;
+            @include mixins.text-white-on-dark;
+          }
+          .form-name {
+            width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+            cursor: pointer;
+            @include mixins.text-white-on-dark;
+          }
+
+          .form-actions {
+            width: 100%;
+            border: 1px solid #ccc;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            .anticon {
+              flex: 1 1 50%;
+              text-align: center;
+              justify-content: center;
+              padding: 6px 2px;
+              background-color: var(--primary-color);
+              color: var(--white-color);
+              font-size: 16px;
+              &:hover {
+                opacity: 0.8;
+              }
+              &:first-child {
+                border-right: 1px solid #ccc;
+                border-bottom-left-radius: 4px;
+              }
+              &:last-child {
+                border-bottom-right-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .link-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    .dark & {
+      background-color: inherit;
+      color: var(--white-color);
+    }
+  }
+
+  .copy-link-button {
+    padding: 8px 16px;
+    background-color: #2a2d45;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+.search-input,
+.dropdown {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.settings-section {
+  border: 1px solid #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.color-picker {
+  margin-left: 10px;
+}
+.cooling-period {
+  width: auto;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+  .dark & {
+    background-color: inherit;
+    color: var(--white-color);
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+
+.details-button {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.new-form-button {
+  padding: 10px 20px;
+  background-color: #2a2d45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-settings {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-label .fas {
+  margin-right: 4px;
+}
+
+.saved-forms-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  position: relative;
+  display: flex;
+}
+
+.form-content {
+  display: flex;
+  justify-content: space-between;
+  /* Space between name and icons */
+  align-items: center;
+  padding: 8px 12px;
+  /* Add padding for better UX */
+  border: 1px solid #ddd;
+  /* Optional: Add border */
+  border-radius: 4px;
+  /* Optional: Rounded corners */
+  transition: background-color 0.3s;
+  /* Smooth hover effect */
+}
+
+.form-content:hover {
+  background-color: #f5f5f5;
+  /* Highlight on hover */
+}
+
+.form-icons {
+  display: none;
+  /* Hide icons by default */
+  gap: 10px;
+  /* Space between icons */
+}
+
+.form-content:hover .form-icons {
+  display: flex;
+  /* Show icons on hover */
+}
+
+.form-icons .anticon {
+  cursor: pointer;
+  color: #999;
+  transition: color 0.2s;
+}
+
+.form-icons .anticon:hover {
+  color: #1890ff;
+  /* Highlight color for icons */
+}

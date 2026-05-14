@@ -1,0 +1,16 @@
+.loaderLayout {
+  margin: 10px;
+}
+
+.headerSkeleton {
+  height: 4rem !important;
+}
+
+.contentSkeleton {
+  margin-top: 20px;
+  height: 80vh !important;
+}
+.footerSkeleton {
+  margin-top: 12px;
+  height: 4rem !important;
+}

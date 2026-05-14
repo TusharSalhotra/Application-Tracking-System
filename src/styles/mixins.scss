@@ -1,0 +1,36 @@
+@mixin text-white-on-dark {
+  .dark & {
+    color: var(--white-color) !important;
+  }
+}
+@mixin link-on-dark {
+  .dark & {
+    color: var(--white-color) !important;
+    text-decoration: underline;
+  }
+}
+@mixin dark-bg {
+  .dark & {
+    background-color: var(--dark-black1) !important;
+  }
+}
+@mixin dark-bg2 {
+  .dark & {
+    background-color: var(--dark-black2) !important;
+  }
+}
+@mixin flex-wrap-991 {
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+}
+@mixin w-full-767 {
+  @media (max-width: 767px) {
+    width: 100% !important;
+  }
+}
+@mixin w-full-991 {
+  @media (max-width: 991px) {
+    width: 100% !important;
+  }
+}

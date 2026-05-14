@@ -1,0 +1,60 @@
+.offer-link-page {
+  padding: 40px;
+  background-color: var(--white-color);
+  padding: 16px;
+  min-height: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+.no-data {
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.offer-center-loader {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  background: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.dark .offer-center-loader {
+  background-color: var(--dark-black1);
+}
+
+.message-container-accepted {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: green;
+}
+
+.message-container-expired {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: red;
+}

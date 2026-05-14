@@ -1,0 +1,203 @@
+// Common ant input
+@use "./mixins.scss" as mixins;
+
+.ant-dropdown {
+  .ant-dropdown-menu {
+    .dark & {
+      background-color: var(--primary-gray);
+      border-radius: 8px;
+      .ant-dropdown-menu-item {
+        &:hover {
+          background-color: #4a515d;
+        }
+      }
+
+      .ant-dropdown-menu-title-content {
+        color: var(--white-color);
+      }
+    }
+  }
+}
+
+.ant-spin {
+  .dark & {
+    .ant-spin-dot {
+      .ant-spin-dot-item {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
+
+.primary-heading {
+  padding-left: 0.375rem;
+  margin-top: 0.5rem;
+  border: 1px solid #032d60;
+  color: #032d60;
+  border-width: 0 0 2px 0;
+  width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &.with-actions {
+    position: relative;
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+      gap: 10px;
+    }
+    .basicButton {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      @media (max-width: 767px) {
+        display: none;
+        inset: 0;
+      }
+    }
+    .backIcon {
+      border: 1px solid var(--primary-color);
+      width: 25px;
+      min-width: 25px;
+      display: none;
+      height: 25px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--primary-color);
+      font-size: 14px;
+      @media (max-width: 767px) {
+        display: inline-flex;
+        inset: 0;
+      }
+    }
+    &.about-course-heading {
+      position: sticky;
+      top: -18px;
+      background: #fff;
+      margin: 0;
+      padding: 20px 0 0px;
+      height: max-content;
+      @include mixins.dark-bg;
+      // .ant-card-body & {
+      //   padding-top: 0;
+      // }
+    }
+  }
+}
+
+.primary-heading-title {
+  padding-left: 0.375rem;
+  margin-top: 0.5rem;
+  color: #032d60;
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+.common-modal {
+  &.ats-modal {
+    .ant-modal-close {
+      display: block;
+    }
+  }
+}
+
+.ant-empty-description {
+  @include mixins.text-white-on-dark;
+}
+
+.ant-modal-confirm {
+  .ant-modal-confirm-body-wrapper {
+    padding: 10px;
+  }
+}
+
+.mobile-tabs-select {
+  margin: 10px;
+  display: none !important;
+  @media (max-width: 991px) {
+    display: flex !important;
+  }
+}
+
+.permit-tab-content {
+  .common-table-widget {
+    .table-search-bar {
+      flex-direction: row;
+    }
+  }
+}
+.access-table {
+  .permissions-table {
+    @media (max-width: 991px) {
+      min-width: 100%;
+    }
+  }
+  .access-tabs {
+    &.CHS-tabs {
+      max-height: 100%;
+    }
+    .ant-tabs-content {
+      .ant-tabs-tabpane {
+        max-height: calc(100dvh - 530px);
+        overflow: auto;
+        @media (max-width: 991px) {
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.common-left-tabs {
+  background-color: #e8f4ff;
+  border-inline-end: none !important;
+  max-height: 100% !important;
+  .dark & {
+    background-color: rgb(31 41 55 / 1);
+  }
+  .ant-menu-item,
+  .ant-menu-item:hover {
+    .dark & {
+      background-color: rgb(31 41 55 / 1) !important;
+      color: rgb(229 231 235 / 1) !important;
+      border-left: 4px solid transparent !important;
+    }
+  }
+  .ant-menu-item {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 0.5rem 1rem !important;
+    background-color: #e8f4ff !important;
+    border-left: 4px solid #e8f4ff !important;
+    transition: all 0.5s;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #1f2937;
+    text-align: left;
+    &.ant-menu-item-selected {
+      background-color: #ffffff !important;
+      border-left: 4px solid var(--primary-color) !important;
+      color: #032d60;
+      .dark & {
+        border-left: 4px solid var(--primary-color2) !important;
+        background-color: var(--dark-black1) !important;
+        border-color: #e8f4ff;
+      }
+    }
+    &:last-child {
+      border: none;
+    }
+    &::after {
+      display: none !important;
+    }
+  }
+}
+.CHS-link {
+  @include mixins.link-on-dark;
+}
