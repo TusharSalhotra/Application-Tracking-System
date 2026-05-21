@@ -6,7 +6,7 @@ import {
   AsyncTable,
   BaseButton,
   BaseButtonsForm,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { CITY_V2 } from "services/api-services/constants";
 import { handleGlobalSearch, Actions } from "../../common-ats-functions/utils";
 import {

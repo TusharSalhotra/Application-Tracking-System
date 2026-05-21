@@ -1,7 +1,7 @@
 import React from "react";
 import { Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
-import { BaseButton, BaseButtonsForm } from "lib/citywide-commonmodules";
+import { BaseButton, BaseButtonsForm } from "lib/ui-commonmodules";
 
 export function FileUploadForm({
   field,

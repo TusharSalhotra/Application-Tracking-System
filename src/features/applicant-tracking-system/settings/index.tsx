@@ -26,7 +26,7 @@ import {
   BaseCard,
   BaseInputBox,
   successNotify,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { Errornotify, Successnotify } from "utils/notification";
 import { Card, Col, Flex, Row, Spin, Tooltip } from "antd";
 import { CITY_V2 } from "services/api-services/constants";

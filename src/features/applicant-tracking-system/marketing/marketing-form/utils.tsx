@@ -5,7 +5,7 @@ import {
   BaseCol,
   BaseInputBox,
   SelectBox,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import React from "react";
 import {
   Checkbox,

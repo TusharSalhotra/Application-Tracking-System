@@ -9,7 +9,7 @@ import {
   BaseRadio,
   BaseCheckbox,
   BaseCol,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { Input } from "antd";
 import { Field } from "utils/types";
 import PhoneInput from "react-phone-input-2";

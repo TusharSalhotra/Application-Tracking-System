@@ -8,7 +8,7 @@ import {
   BaseCol,
   BaseRow,
   SelectBox,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 
 import { Spin, Layout, Typography, Row, Col, Button } from "antd";
 const { Footer } = Layout;

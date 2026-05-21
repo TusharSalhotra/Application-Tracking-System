@@ -25,9 +25,6 @@
     "paths": {
       "@/*": [
         "*"
-      ],
-      "deepak-pahwa/citywide-commonmodules/*": [
-        "../path/to/deepak-pahwa/citywide-commonmodules/src/*"
       ]
     },
     "plugins": [

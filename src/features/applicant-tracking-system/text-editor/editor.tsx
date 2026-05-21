@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { EditorState } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
-import { BaseButtonsForm } from "lib/citywide-commonmodules";
+import { BaseButtonsForm } from "lib/ui-commonmodules";
 
 type Editortype = {
   description: EditorState;

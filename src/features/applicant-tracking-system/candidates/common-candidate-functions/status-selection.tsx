@@ -7,7 +7,7 @@ import {
   BaseCol,
   BaseRadio,
   BaseRow,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { Row, Col, Form, Radio, Flex, Modal } from "antd";
 import { ColumnGroupBy } from "../../common-ats-functions/utils";
 import BlacklistCard from "./blacklist-card";

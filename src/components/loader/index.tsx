@@ -1,4 +1,4 @@
-import { BaseSkeleton } from "lib/citywide-commonmodules";
+import { BaseSkeleton } from "lib/ui-commonmodules";
 import React from "react";
 
 export default function Loader() {

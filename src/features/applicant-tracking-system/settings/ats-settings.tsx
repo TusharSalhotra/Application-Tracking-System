@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseButton } from "lib/citywide-commonmodules";
+import { BaseButton } from "lib/ui-commonmodules";
 import { Card, Flex, TabsProps } from "antd";
 import { CITY_V2 } from "services/api-services/constants";
 

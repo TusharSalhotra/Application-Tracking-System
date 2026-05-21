@@ -21,7 +21,7 @@ import {
   BaseCol,
   BaseInputBox,
   BaseRow,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { CITY_V2 } from "services/api-services/constants";
 import { Errornotify, Successnotify } from "utils/notification";
 import CommonLoader from "components/spinner";

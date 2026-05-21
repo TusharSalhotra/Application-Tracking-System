@@ -4,7 +4,7 @@ import { Flex, Form, Row, Spin } from "antd";
 import {
   BaseButton,
   BaseButtonsForm,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { Errornotify, Successnotify } from "utils/notification";
 import { useSelector } from "react-redux";
 import { renderForm } from "../utils-form";

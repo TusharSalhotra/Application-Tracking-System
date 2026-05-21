@@ -22,7 +22,7 @@ import {
 import { title } from "process";
 import { text } from "stream/consumers";
 import CommonNoData from "components/NoData";
-import { BaseButton } from "lib/citywide-commonmodules";
+import { BaseButton } from "lib/ui-commonmodules";
 import { locationId } from "utils/common-function";
 import { getApplicantAnalyticsData } from "services/api-services/ats-apis";
 import { EXPORT_URL } from "services/api-services/constants";

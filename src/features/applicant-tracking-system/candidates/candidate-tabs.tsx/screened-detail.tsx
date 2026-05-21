@@ -8,7 +8,7 @@ import { formatKey } from "utils/common-function";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import { DownloadOutlined, EyeOutlined } from "@ant-design/icons";
 import { DIGITALOCEAN_SPACES_ENDPOINT_ACCESS } from "services/api-services/constants";
-import { BaseCard } from "lib/citywide-commonmodules";
+import { BaseCard } from "lib/ui-commonmodules";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import moment from "moment";
 

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { AsyncTable, BaseButton } from "lib/citywide-commonmodules";
+import { AsyncTable, BaseButton } from "lib/ui-commonmodules";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import {

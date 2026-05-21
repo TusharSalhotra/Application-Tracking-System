@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "antd";
-import { BaseButton, BaseCard } from "lib/citywide-commonmodules";
+import { BaseButton, BaseCard } from "lib/ui-commonmodules";
 
 interface ButtonProps {
   label: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseButton } from "lib/citywide-commonmodules";
+import { BaseButton } from "lib/ui-commonmodules";
 import { Flex } from "antd";
 interface HeaderProps {
   logo: string; // logo passed from the parent

@@ -21,7 +21,7 @@ import {
 } from "../common-ats-functions/utils";
 import { ApexOptions } from "apexcharts";
 import CommonNoData from "components/NoData";
-import { BaseButton } from "lib/citywide-commonmodules";
+import { BaseButton } from "lib/ui-commonmodules";
 import { locationId } from "utils/common-function";
 import { getApplicantAnalyticsData } from "services/api-services/ats-apis";
 import { EXPORT_URL } from "services/api-services/constants";

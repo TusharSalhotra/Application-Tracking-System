@@ -20,7 +20,7 @@ import {
   BaseCol,
   BaseInputBox,
   SelectBox,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import {
   deleteCandidate,
   updateCandidateStatus,

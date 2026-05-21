@@ -1,6 +1,6 @@
 import React from "react";
 import { Drawer, Space, Button, Flex } from "antd";
-import { BaseButton } from "lib/citywide-commonmodules";
+import { BaseButton } from "lib/ui-commonmodules";
 
 interface CommonDrawerProps {
   title: string;

@@ -6,7 +6,7 @@ import {
   BaseButton,
   BaseButtonsForm,
   BaseCard,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import {
   CITY_V2,
   DIGITALOCEAN_SPACES_ENDPOINT_ACCESS,

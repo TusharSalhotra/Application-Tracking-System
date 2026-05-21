@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import ApplicationForm from "./application-form";
 import JobDetails from "./job-details";
-import { BaseButton } from "lib/citywide-commonmodules";
+import { BaseButton } from "lib/ui-commonmodules";
 import { getJobPostingDetails } from "services/api-services/ats-apis";
 import { useParams } from "react-router-dom";
 import Header from "../header/header";

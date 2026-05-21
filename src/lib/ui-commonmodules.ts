@@ -1,5 +1,5 @@
 /**
- * Local shim replacing "lib/citywide-commonmodules".
+ * Local shim replacing "lib/ui-commonmodules".
  * All antd wrappers are aliased directly; AsyncTable and AxiosInstance
  * are re-implemented here so call-sites need no changes.
  */

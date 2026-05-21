@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   AsyncTable,
   BaseButtonsForm,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { Card, Flex, Tooltip } from "antd";
 import { CITY_V2 } from "services/api-services/constants";
 import { handleDeleteCandidate, submitInterviewDetails } from "./utils";

@@ -5,7 +5,7 @@ import {
   BaseButtonsForm,
   BaseCard,
   BaseInputBox,
-} from "lib/citywide-commonmodules";
+} from "lib/ui-commonmodules";
 import { CITY_V2 } from "services/api-services/constants";
 import { CheckCircleFilled, ExclamationCircleFilled } from "@ant-design/icons";
 
