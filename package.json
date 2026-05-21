@@ -3,9 +3,9 @@
   "version": "0.0.7",
   "homepage": "",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint"
   },
   "proxy": "",
@@ -83,5 +83,8 @@
     "eslint-config-next": "^14.2.35",
     "npm": "^10.3.0",
     "typescript": "^5.3.2"
+  },
+  "overrides": {
+    "eslint-config-next": "14.2.35"
   }
 }
