@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Flex } from "antd";
-import { AsyncTable } from "@deepak-pahwa/citywide-commonmodules";
+import { AsyncTable } from "lib/citywide-commonmodules";
 import { CITY_V2 } from "services/api-services/constants";
 import { deleteJobPost } from "services/api-services/ats-apis";
 import { Actions, handleGlobalSearch } from "../../common-ats-functions/utils";

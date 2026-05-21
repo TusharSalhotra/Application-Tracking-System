@@ -2,7 +2,7 @@
 import {
   BaseButton,
   BaseButtonsForm,
-} from "@deepak-pahwa/citywide-commonmodules";
+} from "lib/citywide-commonmodules";
 import { Col, Flex, Form, List, Row, Spin, Typography } from "antd";
 import dayjs from "dayjs";
 import moment from "moment";

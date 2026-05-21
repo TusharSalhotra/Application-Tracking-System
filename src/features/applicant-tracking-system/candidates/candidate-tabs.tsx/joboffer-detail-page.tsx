@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Flex, Radio, Spin, Col, Row, Input, Typography } from "antd";
-import { BaseButton } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton } from "lib/citywide-commonmodules";
 import { CITY_V2 } from "services/api-services/constants";
 import {
   getCandidateDetail,

@@ -6,7 +6,7 @@ import {
   BaseInputBox,
   SelectBox,
   BaseCol,
-} from "@deepak-pahwa/citywide-commonmodules";
+} from "lib/citywide-commonmodules";
 
 import { Form, Input, Checkbox, DatePicker, Radio, Upload } from "antd";
 import { Field } from "utils/types";

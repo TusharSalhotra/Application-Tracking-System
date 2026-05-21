@@ -12,7 +12,7 @@ import {
   Card,
   Typography,
 } from "antd";
-import { BaseButton } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton } from "lib/citywide-commonmodules";
 import { CITY_V2 } from "services/api-services/constants";
 import {
   getCandidateDetail,
@@ -23,7 +23,7 @@ import {
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { capitalize } from "lodash";
-import { BaseButtonsForm } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButtonsForm } from "lib/citywide-commonmodules";
 import { date_format, locationId } from "utils/common-function";
 import { interviewStatuses, renderForm, sendOffer } from "./utils";
 import { Errornotify, Successnotify } from "utils/notification";

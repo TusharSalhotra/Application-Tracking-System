@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseButton, BaseRadio } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton, BaseRadio } from "lib/citywide-commonmodules";
 import { Row, Col, Form, Radio, Flex } from "antd";
 import { ColumnGroupBy } from "../../common-ats-functions/utils";
 

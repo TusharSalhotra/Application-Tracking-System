@@ -3,7 +3,7 @@ import {
   BaseButtonsForm,
   BaseRadio,
   Option,
-} from "@deepak-pahwa/citywide-commonmodules";
+} from "lib/citywide-commonmodules";
 import { Form, Row, Col, Calendar, Select, Input, Radio, Flex } from "antd";
 import { useWatch } from "antd/es/form/Form";
 import moment from "moment";

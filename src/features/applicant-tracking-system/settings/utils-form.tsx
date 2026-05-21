@@ -9,7 +9,7 @@ import {
   BaseRadio,
   BaseCheckbox,
   BaseCol,
-} from "@deepak-pahwa/citywide-commonmodules";
+} from "lib/citywide-commonmodules";
 
 import {
   Form,

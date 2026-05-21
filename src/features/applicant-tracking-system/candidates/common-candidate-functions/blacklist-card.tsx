@@ -3,7 +3,7 @@ import {
   BaseButton,
   BaseCard,
   BaseRadio,
-} from "@deepak-pahwa/citywide-commonmodules";
+} from "lib/citywide-commonmodules";
 import { Flex, Form, Radio, Input } from "antd";
 import { ColumnGroupBy } from "../../common-ats-functions/utils";
 import { useForm } from "antd/es/form/Form";

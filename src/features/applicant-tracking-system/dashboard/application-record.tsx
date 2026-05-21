@@ -22,7 +22,7 @@ import {
   getCustomDateRange,
   handleRangeChange,
 } from "../common-ats-functions/utils";
-import { BaseButton } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton } from "lib/citywide-commonmodules";
 import { getApplicantAnalyticsData } from "services/api-services/ats-apis";
 import { EXPORT_URL } from "services/api-services/constants";
 import { Errornotify } from "utils/notification";

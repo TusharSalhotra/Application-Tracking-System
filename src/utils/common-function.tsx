@@ -29,7 +29,7 @@ import Antically from "../assets/Fonts/Antically-Regular.woff";
 import Cedarville from "../assets/Fonts/Cedarville-Cursive.woff";
 import Manrope from "../assets/Fonts/Manrope-Regular.woff";
 import StyleScript from "../assets/Fonts/StyleScript-Regular.woff";
-import { AxiosInstance } from "@deepak-pahwa/citywide-commonmodules";
+import { AxiosInstance } from "lib/citywide-commonmodules";
 import { UPLOAD_PDF } from "services/api-services/constants";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Tooltip } from "antd";
-import { AsyncTable } from "@deepak-pahwa/citywide-commonmodules";
+import { AsyncTable } from "lib/citywide-commonmodules";
 import { handleGlobalSearch, Actions } from "../../common-ats-functions/utils";
 import { CITY_V2 } from "services/api-services/constants";
 import { CalendarOutlined } from "@ant-design/icons";

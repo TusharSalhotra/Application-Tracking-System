@@ -5,7 +5,7 @@ import {
     BaseCol,
     BaseInputBox,
     SelectBox,
-  } from "@deepak-pahwa/citywide-commonmodules";
+  } from "lib/citywide-commonmodules";
   import React from "react";
   import { Checkbox, Col, DatePicker, Flex, Input, Radio, Typography } from "antd";
   import dayjs from "dayjs";

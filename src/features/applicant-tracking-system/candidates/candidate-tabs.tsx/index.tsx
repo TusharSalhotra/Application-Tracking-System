@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { BaseButton } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton } from "lib/citywide-commonmodules";
 import { Flex, Tabs } from "antd";
 import React, { useEffect, useState } from "react";
 import { getAllCandidates } from "services/api-services/ats-apis";

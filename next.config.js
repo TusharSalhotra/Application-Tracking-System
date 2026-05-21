@@ -8,7 +8,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  transpilePackages: ["@deepak-pahwa/citywide-commonmodules"],
+  transpilePackages: [],
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,

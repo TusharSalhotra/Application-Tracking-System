@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useState, useEffect } from "react";
 import { Card, Flex } from "antd";
-import { AsyncTable, BaseButton } from "@deepak-pahwa/citywide-commonmodules";
+import { AsyncTable, BaseButton } from "lib/citywide-commonmodules";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 import { CITY_V2 } from "services/api-services/constants";
 import { DownloadOutlined } from "@ant-design/icons";

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { BaseButton, BaseCard } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton, BaseCard } from "lib/citywide-commonmodules";
 import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import {

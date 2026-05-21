@@ -4,7 +4,7 @@ import {
   BaseButtonsForm,
   BaseCol,
   BaseRow,
-} from "@deepak-pahwa/citywide-commonmodules";
+} from "lib/citywide-commonmodules";
 import { Checkbox, Flex, Form, Row, Typography } from "antd";
 import { convertToRaw, EditorState } from "draft-js";
 import moment from "moment";

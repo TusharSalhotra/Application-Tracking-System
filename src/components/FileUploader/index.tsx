@@ -8,7 +8,7 @@ import { DIGITALOCEAN_SPACES_ENDPOINT_ACCESS } from "services/api-services/const
 import { Edit_Icon, locationId } from "utils/common-function";
 import { Errornotify, Successnotify } from "utils/notification";
 import { uploadCv } from "services/api-services/ats-apis";
-import { BaseButton } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton } from "lib/citywide-commonmodules";
 
 type Props = {
   pdfPath: any;

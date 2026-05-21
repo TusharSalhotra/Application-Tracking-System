@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseButton } from "@deepak-pahwa/citywide-commonmodules";
+import { BaseButton } from "lib/citywide-commonmodules";
 import { Row, Col, Flex } from "antd";
 
 const ScreenedSelection = ({
